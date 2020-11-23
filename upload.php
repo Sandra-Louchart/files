@@ -31,10 +31,10 @@ if (!empty($_FILES['test']['name'][0])){
                     $error[] = 'Le fichier '. $files['name'][$i] . ' ne peut excéder la taille de '. $maxSize .' octets';
                 }
             } else {
-                $error[] = 'Le fichier n\'est pas bien téléchargé, veuillez appelez Orange, SFR ou Bouygues';
+                $error[] = 'Le fichier n\'est pas bien téléchargé, veuillez suivre les informations;
             }
         } else {
-            $error[] = 'Le fichier ne possède pas la bonne extension';
+            $error[] = 'Le fichier ne possède pas la bonne extension (.jpg, .jpeg, .jpeg, .gif, .png)';
         }
     }
     if (!empty($error)){
@@ -56,7 +56,7 @@ if (!empty($_FILES['test']['name'][0])){
 <form action="" method="POST" enctype="multipart/form-data">
     <div class="form-group">
         <h2>Documents upload</h2>
-        <p></p><strong>Note:</strong> Only .jpg, .jpeg, .jpeg, .gif, .png are authorized until 1 Mo.</p>
+        <p></p><strong>Note:</strong> Seulement .jpg, .jpeg, .jpeg, .gif, .png are authorized until 1 Mo.</p>
         <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
         <input type="file" name="test[]" multiple="multiple"> <br>
         <input type="submit" name ="submit">
