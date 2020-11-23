@@ -31,7 +31,7 @@ if (!empty($_FILES['test']['name'][0])){
                     $error[] = 'Le fichier '. $files['name'][$i] . ' ne peut excéder la taille de '. $maxSize .' octets';
                 }
             } else {
-                $error[] = 'Le fichier n\'est pas bien téléchargé, veuillez suivre les informations;
+                $error[] = 'Le fichier n\'est pas bien téléchargé, veuillez suivre les informations';
             }
         } else {
             $error[] = 'Le fichier ne possède pas la bonne extension (.jpg, .jpeg, .jpeg, .gif, .png)';
